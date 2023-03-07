@@ -1,3 +1,5 @@
+
+  
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 }
 .navbar{
     background: crimson;
+    position: sticky;
     display: flex;
     height: 60px;
     width: cover;
@@ -22,45 +25,164 @@
 }
 .logo{
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 200;
     font-family: 'poppins'sans-serif;
-    padding-right: 95px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    padding-right: 30px;
+    padding: 0 100px;
 }
 .logo span{
     color: aqua;
 }
-.menu{
+.logo ul li{
     color: white;
     display: inline-block;
-    padding-left: 30px;
-    padding-top: 40px;
+    padding-left: 150px;
+    
 }
-.menu ul{
-    display: inline-block;
-}
-.menu ul li{
+.logo ul li a{
     display: inline-block;
     justify-content: space-between;
-    margin-left: 240px;
-}
-.menu ul li a{
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 200;
     color: #fff;
     transition: 0.2s;
     text-decoration: none;
 }
-.menu ul li a:hover{
+.logo ul li a:hover{
     color: greenyellow;
 }
 a:is(:link, :active, :visited).active{
     color: #fff;
     background-color: black;
 }
+@media only screen and (max-width: 960px) {
+    .logo{
+        padding-left: 0;
+    }
+    .logo ul li{
+        padding-left: 100px;
+        margin: 0;
+    }
+
+}
+@media only screen and (max-width: 760px) {
+    .logo{
+        padding-left: 0;
+        font-size: 30px;
+    }
+    .logo ul li{
+        padding-left: 7px;
+        margin-right: 0;
+        padding-top: 30px;
+    }
+    .logo ul li a{
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width: 560px) {
+    .logo{
+        padding-left: 0;
+        font-size: 25px;
+    }
+    .logo ul li{
+        padding-left: 5px;
+        margin-right: 0;
+        padding-top: 30px;
+    }
+    .logo ul li a{
+        font-size: 10px;
+    }
+    .str{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .logo{
+        padding-left: 0;
+        font-size: 20px;
+        margin-right: 4px;
+    }
+    .logo ul li{
+        margin-right: 0; 
+        float: left;
+        padding-top: 30px;
+        margin-left: 0;
+        margin-top: 10px;
+
+    }
+    .logo ul li a{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 441px) {
+    .logo{
+        padding-left: 0;
+        font-size: 26px;
+    }
+    .logo ul li{
+        margin-right: 1px;
+        font-size: 18px; 
+        padding-top: 15px;
+        display: inline;
+        margin-top: 30px;
+        
+    }
+    .logo ul li a{
+        font-size: 8px;
+    }
+
+}
+@media only screen and (max-width: 420px) {
+    .logo{
+        padding-left: 0;
+        font-size: 23px;
+    }
+    .logo ul li{
+        margin-right: 7px;
+        font-size: 10px; 
+        padding-top: 10px;
+        margin-left: 78px;
+        display: inline;
+        margin-top: 10px;
+        
+    }
+    .logo ul li a{
+        font-size: 8px;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    .logo{
+        padding-left: 0;
+        font-size: 19px;
+    }
+    .logo ul li{
+        margin-right: 2px;
+        font-size: 12px; 
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: 35px;
+        display: inline-flex;
+        
+    }
+    .logo ul li a{
+        font-size: 8px;
+    }
+
+}
 
 .mid{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     width: cover;
-    background-attachment: fixed;
+    position: relative;
     height: auto;
 }
 
@@ -144,28 +266,27 @@ a:is(:link, :active, :visited).active{
     font-family: 'poppins'sans-serif;
 }
 .cnn{
-    height: 95vh;
-    width: 100%;
+    height: cover;
+    width: cover;
     background: url(images/3334896.jpg);
 }
 .container{
-    height: 95vh;
-    background-attachment: fixed;
-    width: 900px;
+    height: cover;
+    position: relative;
+    width: cover;
+    margin: 0 35px;
     background: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
+    text-align: center;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'poppins', sans-serif;
 }
 .hhh{
-    margin-top: 27px;
-    text-align: center;
+    margin: 0 25px;
     margin-bottom: 30px;
     border-bottom: 1px solid white;
+    text-align: center;
 }
 .comment{
     margin-top: 25px;
@@ -176,7 +297,7 @@ a:is(:link, :active, :visited).active{
     padding: 15px;
     align-items: center;
     background: url(images/pexels-lil-artsy-3750768.jpg);
-    height: 90vh;
+    height: 100vh;
     color: white;
     font-size: 20px;
     font-family: 'poppins',sans-serif;
@@ -206,26 +327,30 @@ a:is(:link, :active, :visited).active{
     border-bottom: 2px solid red;
 }
 .str{
-    background: gray;
-    height: 100vh;
-    width: 770px;
+    background: white;
+    height: cover;
+    width: cover;
     align-items: center;
-    margin-left: 320px;
+    margin: 0 25px;
+    font-weight: 400;
+    font-family: 'poppins',sans-serif;
 }
 .story{
     border-bottom: 2px solid black;
     padding-top: 10px;
     text-align: center;
 }
-.bttn{
+.bn{
     color: #fff;
     background: blue;
     border-radius: 5px;
     transition: 0.1s;
+    margin-top: 30px;
 }
-.bttn:hover{
+.bn:hover{
     color: #aaa;
 }
+
 .copyright{
     height: 5hv;
     background: gray;
@@ -245,15 +370,23 @@ a:is(:link, :active, :visited).active{
     margin-left: 100px;
 }
 .share{
+    background: white;
+    margin-bottom: 0px;
+    float: left;
+}
+.share a{
+    padding-right: 30px;
+    display: inline;
     
-    padding-top: 30px;
-    margin-left: 700px;
+}
+.with{
+    font-size: 20px;
 }
 .ssh{
     margin-top: 30px;
 }
 .comment{
-    margin-top: 500px;
+    margin-top: 50px;
 }
 .comment h2{
     font-size: 12px;
@@ -262,4 +395,67 @@ a:is(:link, :active, :visited).active{
 .comment a{
     margin-left: 15px;
     margin-top: 7px;
+}
+
+.head{
+    margin-bottom: 10px;
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'poppins',sans-serif;
+    margin-top: 10px;
+    
+}
+.one {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.two {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.three {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.four {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.five {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.six{
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.seven {
+    margin-left: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.tip p{
+    margin: 10px 10px;
+    font-weight: 300;
+    font-family: 'poppins',sans-serif;
+}
+.tip h3{
+    font-weight: 300;
+    margin-top: 10px;
+    color: aquamarine;
+}
+
+.tp{
+    float: right;
+    background: #aaa;
+    width: cover;
+    margin-bottom: 30px;
 }
